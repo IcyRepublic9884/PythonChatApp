@@ -1,9 +1,13 @@
 
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-8
-debug.py,6\4\64048a6fc0a63a6690d6a2a235f2b7e2d1bd07a4
-9
-	client.py,8\3\83c82b69e709f001cbef03ab0a6551df344cfad7
-9
-	server.py,3\7\37f78d9e69dff05b443a39c32175987bb0cbdccd
+G
+ui_files/server_form.ui,a\8\a87f257932b0b479cd01ac4ef117fa8326e15c33
+G
+ui_files/client_form.ui,8\8\8859c1dcafc4c2135a0084482b27d85b00727c0b
+E
+chat_server/client.py,d\f\dfd2f710c7a5e5ba45ae5bcdce456b7d7059b570
+E
+chat_server/server.py,5\c\5c80fe494ad9b7650a7c03c98c287f43e7b05575
+D
+chat_server/debug.py,7\7\775c121fc1b0af3212e9a1b2ae83755f08caa229

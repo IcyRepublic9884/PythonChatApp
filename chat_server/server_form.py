@@ -8,7 +8,7 @@
 
 from PyQt5 import QtCore, QtWidgets
 
-from chat_server.server import SimpleChatServer
+from server import SimpleChatServer
 
 
 class Ui_MainWindow(object):
