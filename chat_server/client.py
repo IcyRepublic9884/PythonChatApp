@@ -10,8 +10,10 @@ class SimpleChatClient:
         self.buf_size = buf_size
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    def _connect(self):
+    def _connect_local(self):
+        """Connect to the server"""
         self.client.connect((socket.gethostbyname(socket.gethostname()), self.port_no))
+        # TODO: Update to use supplied IP addr
 
     def _start_threads(self):
         """Start the Threads to receive and send messages"""
@@ -32,5 +34,5 @@ class SimpleChatClient:
 
     def start_client(self):
         """Start the client"""
-        self._connect()
+        self._connect_local()
         self._start_threads()

@@ -23,6 +23,7 @@ class SimpleChatServer:
             self._host = host
 
     def recv_and_send_messages(self, client_sock: socket.socket):
+        """Send and receive the message to clients"""
         while True:
             msg = client_sock.recv(self.buf_size).decode('utf-8')
             send_messages(client_sock, msg)
@@ -47,12 +48,14 @@ class SimpleChatServer:
         """Accept connection and add the client to the client list"""
 
         def thread_func():
+            """Thread for accepting connections"""
             sock, _ = self.server_socket.accept()
             self.client_list.append(sock)
 
         threading.Thread(target=thread_func, args=()).start()
 
     def _start_main_thread(self):
+        """Thread for reading and sending messages to clients"""
         def thread_func():
             while True:
                 for client in self.client_list:
@@ -61,10 +64,10 @@ class SimpleChatServer:
         threading.Thread(target=thread_func, args=()).start()
 
     def stop(self):
+        """Close all the clients and close the server"""
         for client in self.client_list:
             client.close()
         self.server_socket.close()
-        exit(0)
 
     def start_server(self):
         """Start the server"""
