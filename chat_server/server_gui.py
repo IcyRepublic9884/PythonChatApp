@@ -6,9 +6,29 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+import threading
+
+from PyQt5 import QtCore, QtWidgets
+
+from chat_server.server import SimpleChatServer
+
+
+def client_watcher(server: SimpleChatServer, client_view: QtWidgets.QListWidget):
+    """Watch the client list and append and remove additions and deletions, used with a thread"""
+    for client in server.client_list:
+        # TODO: add client name for this, or ADDR
+        # TODO: Figure out how to sleep this
+        client_view.addItem(str(client))
 
 class Ui_MainWindow(object):
+
+    def _init_server(self):
+        # Default port 5000
+        self.server = SimpleChatServer(port_no=5000)
+
+        # Start a thread to watch the client list
+        self.client_listner_thread = threading.Thread(target=None, args=())
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(934, 426)
@@ -44,18 +64,18 @@ class Ui_MainWindow(object):
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_2.setGeometry(QtCore.QRect(380, 10, 541, 371))
         self.groupBox_2.setObjectName("groupBox_2")
-        self.client_list_view = QtWidgets.QListView(self.groupBox_2)
+        self.client_list_view = QtWidgets.QListWidget(self.groupBox_2)
         self.client_list_view.setGeometry(QtCore.QRect(10, 30, 521, 331))
         self.client_list_view.setObjectName("client_list_view")
-        self.start_server_button = QtWidgets.QPushButton(self.centralwidget)
-        self.start_server_button.setGeometry(QtCore.QRect(10, 240, 171, 61))
-        self.start_server_button.setObjectName("start_server_button")
-        self.clear_clients_button = QtWidgets.QPushButton(self.centralwidget)
-        self.clear_clients_button.setGeometry(QtCore.QRect(10, 310, 341, 61))
-        self.clear_clients_button.setObjectName("clear_clients_button")
-        self.stop_server_button = QtWidgets.QPushButton(self.centralwidget)
-        self.stop_server_button.setGeometry(QtCore.QRect(190, 240, 171, 61))
-        self.stop_server_button.setObjectName("stop_server_button")
+        self.start_server_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.start_server_btn.setGeometry(QtCore.QRect(10, 240, 171, 61))
+        self.start_server_btn.setObjectName("start_server_btn")
+        self.clear_clients_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.clear_clients_btn.setGeometry(QtCore.QRect(10, 310, 341, 61))
+        self.clear_clients_btn.setObjectName("clear_clients_btn")
+        self.stop_server_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.stop_server_btn.setGeometry(QtCore.QRect(190, 240, 171, 61))
+        self.stop_server_btn.setObjectName("stop_server_btn")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 934, 26))
@@ -80,6 +100,21 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+    def start_server_button(self):
+        """Set the port, max client number, buffer size and start the server"""
+        self.server.port_no = int(self.port_number_input.text())
+        self.server.max_clients = int(self.client_wait_list_edit.text())
+        self.server.buf_size = int(self.buffer_size_edit.text())
+        self.server.start_server()
+
+    def stop_server_button(self):
+        # TODO: Implement Button Click
+        pass
+
+    def clear_client_list_button(self):
+        # TODO: Implement Button Click
+        pass
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
@@ -88,9 +123,9 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Client Wait List"))
         self.label_3.setText(_translate("MainWindow", "Buffer Size (in bytes)"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Client List"))
-        self.start_server_button.setText(_translate("MainWindow", "Start Server"))
-        self.clear_clients_button.setText(_translate("MainWindow", "Clear Client List"))
-        self.stop_server_button.setText(_translate("MainWindow", "Stop Server"))
+        self.start_server_btn.setText(_translate("MainWindow", "Start Server"))
+        self.clear_clients_btn.setText(_translate("MainWindow", "Clear Client List"))
+        self.stop_server_btn.setText(_translate("MainWindow", "Stop Server"))
         self.menuFIle.setTitle(_translate("MainWindow", "File"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
         self.actionExport.setText(_translate("MainWindow", "Export"))
@@ -100,10 +135,10 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
+
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-

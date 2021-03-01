@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1033</width>
+    <width>1029</width>
     <height>387</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
     <property name="title">
      <string>Incoming Messages</string>
     </property>
-    <widget class="QListView" name="listView">
+    <widget class="QListView" name="incoming_message_view">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -40,7 +40,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="send_message_btn">
     <property name="geometry">
      <rect>
       <x>550</x>
@@ -53,7 +53,7 @@
      <string>Send Message</string>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QPlainTextEdit" name="message_input">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -88,7 +88,7 @@
       <string>Server IP Address</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="server_ip_input">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -124,7 +124,7 @@
       <string>Reading Buffer Size</string>
      </property>
     </widget>
-    <widget class="QSpinBox" name="spinBox">
+    <widget class="QSpinBox" name="buffer_size_input">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -140,7 +140,7 @@
       <number>3000</number>
      </property>
     </widget>
-    <widget class="QSpinBox" name="spinBox_2">
+    <widget class="QSpinBox" name="port_number_input">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -156,7 +156,7 @@
       <number>8000</number>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="connect_btn">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -169,7 +169,7 @@
       <string>Connect To Server</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="disconnect_and_exit_btn">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -183,7 +183,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="clear_messages_btn">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -211,17 +211,17 @@
    </widget>
    <zorder>groupBox_3</zorder>
    <zorder>groupBox</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>plainTextEdit</zorder>
+   <zorder>send_message_btn</zorder>
+   <zorder>message_input</zorder>
    <zorder>groupBox_2</zorder>
-   <zorder>pushButton_4</zorder>
+   <zorder>clear_messages_btn</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1033</width>
+     <width>1029</width>
      <height>26</height>
     </rect>
    </property>

@@ -1,23 +1,14 @@
 
-npython:S116O"PRename this field "menuFile" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ö‰§»8íÂëİş.
-spython:S116"PRename this field "listView" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ğ·è˜ıÿÿÿÿ8íÂëİş.
-npython:S116"PRename this field "groupBox" to match the regular expression ^[_a-z][_a-z0-9]*$.(ŸñÀ8íÂëİş.
-tpython:S100c"QRename method "retranslateUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(”«Àşÿÿÿÿ8íÂëİş.
-ppython:S116V"SRename this field "actionAbout" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÅáÃ8íÂëİş.
-ypython:S117c"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(”«Àşÿÿÿÿ8íÂëİş.
-rpython:S116"TRename this field "pushButton_3" to match the regular expression ^[_a-z][_a-z0-9]*$.(ØòİÏ8íÂëİş.
-wpython:S116?"TRename this field "pushButton_4" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÖÖíˆıÿÿÿÿ8íÂëİş.
-tpython:S1164"QRename this field "spinBox_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(”Ó›äøÿÿÿÿ8íÂëİş.
-Špython:S101"gRename class "Ui_MainWindow" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.( Ìñıùÿÿÿÿ8’ÜÔİş.
-rpython:S116<"TRename this field "pushButton_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÅÈ 8íÂëİş.
-opython:S116 "RRename this field "groupBox_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(æ½Ü'8íÂëİş.
-npython:S116Q"PRename this field "menuHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¦×é§8íÂëİş.
-upython:S116B"RRename this field "groupBox_3" to match the regular expression ^[_a-z][_a-z0-9]*$.(²îƒÌûÿÿÿÿ8íÂëİş.
-spython:S116&"PRename this field "lineEdit" to match the regular expression ^[_a-z][_a-z0-9]*$.(¯Ùûÿÿÿÿ8íÂëİş.
-npython:S100"KRename method "setupUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ8’ÜÔİş.
-ypython:S117"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ8’ÜÔİş.
-wpython:S116T"TRename this field "actionExport" to match the regular expression ^[_a-z][_a-z0-9]*$.(îñæŒùÿÿÿÿ8íÂëİş.
-mpython:S116/"ORename this field "spinBox" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ë–ºÑ8íÂëİş.
-ppython:S1169"RRename this field "pushButton" to match the regular expression ^[_a-z][_a-z0-9]*$.(ŠÛõ8íÂëİş.
-ppython:S116X"RRename this field "actionHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¿æŠ×8íÂëİş.
-rpython:S116"URename this field "plainTextEdit" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ø« 8íÂëİş.
+opython:S116!"RRename this field "groupBox_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(æ½Ü'8íÂëİş.
+tpython:S100u"QRename method "retranslateUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(”«Àşÿÿÿÿ8íÂëİş.
+npython:S100"KRename method "setupUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ8’ÜÔİş.
+npython:S116R"PRename this field "menuHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¦×é§8íÂëİş.
+npython:S116P"PRename this field "menuFile" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ö‰§»8íÂëİş.
+ppython:S116W"SRename this field "actionAbout" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÅáÃ8íÂëİş.
+ppython:S116Y"RRename this field "actionHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¿æŠ×8íÂëİş.
+wpython:S116U"TRename this field "actionExport" to match the regular expression ^[_a-z][_a-z0-9]*$.(îñæŒùÿÿÿÿ8íÂëİş.
+ypython:S117"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ8’ÜÔİş.
+upython:S116C"RRename this field "groupBox_3" to match the regular expression ^[_a-z][_a-z0-9]*$.(²îƒÌûÿÿÿÿ8íÂëİş.
+Špython:S101"gRename class "Ui_MainWindow" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.( Ìñıùÿÿÿÿ8’ÜÔİş.
+npython:S116"PRename this field "groupBox" to match the regular expression ^[_a-z][_a-z0-9]*$.(ŸñÀ8íÂëİş.
+ypython:S117u"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(”«Àşÿÿÿÿ8íÂëİş.

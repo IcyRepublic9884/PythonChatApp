@@ -131,7 +131,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QPushButton" name="start_server_button">
+   <widget class="QPushButton" name="start_server_btn">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -144,7 +144,7 @@
      <string>Start Server</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="clear_clients_button">
+   <widget class="QPushButton" name="clear_clients_btn">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -157,7 +157,7 @@
      <string>Clear Client List</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="stop_server_button">
+   <widget class="QPushButton" name="stop_server_btn">
     <property name="geometry">
      <rect>
       <x>190</x>

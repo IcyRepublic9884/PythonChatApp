@@ -3,6 +3,8 @@ import threading
 from typing import List
 
 
+# TODO: Add option to connect to external machine
+
 def send_messages(client_sock: socket.socket, msg: str):
     """Encode a string and send to the client"""
     client_sock.send(msg.encode())
@@ -40,7 +42,7 @@ class SimpleChatServer:
         self.server_socket.close()
         del self
 
-    def _bind(self):
+    def _bind_local(self):
         """Bind the Server to the Local Machine"""
         self.server_socket.bind((self._host, self.port_no))
 
@@ -56,6 +58,7 @@ class SimpleChatServer:
 
     def _start_main_thread(self):
         """Thread for reading and sending messages to clients"""
+
         def thread_func():
             while True:
                 for client in self.client_list:
@@ -72,7 +75,7 @@ class SimpleChatServer:
     def start_server(self):
         """Start the server"""
         try:
-            self._bind()
+            self._bind_local()
             self.server_socket.listen(self.max_clients)
             self._start_acceptor_thread()
             self._start_main_thread()
