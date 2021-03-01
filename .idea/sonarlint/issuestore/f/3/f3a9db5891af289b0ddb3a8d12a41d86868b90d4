@@ -1,0 +1,13 @@
+
+ƒpython:S101"gRename class "Ui_MainWindow" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.( Ìñıùÿÿÿÿ
+gpython:S116E"PRename this field "menuHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¦×é§
+ipython:S116L"RRename this field "actionHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¿æŠ×
+rpython:S117"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ
+hpython:S1160"RRename this field "groupBox_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(æ½Ü'
+ppython:S116H"TRename this field "actionExport" to match the regular expression ^[_a-z][_a-z0-9]*$.(îñæŒùÿÿÿÿ
+mpython:S100]"QRename method "retranslateUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(”«Àşÿÿÿÿ
+gpython:S100"KRename method "setupUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ
+gpython:S116"PRename this field "groupBox" to match the regular expression ^[_a-z][_a-z0-9]*$.(ŸñÀ
+rpython:S117]"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(”«Àşÿÿÿÿ
+gpython:S116C"PRename this field "menuFIle" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ã·¸
+opython:S116J"SRename this field "actionAboit" to match the regular expression ^[_a-z][_a-z0-9]*$.(í»¤­úÿÿÿÿ
