@@ -17,3 +17,8 @@ I
 chat_server/server_gui.py,f\3\f3a9db5891af289b0ddb3a8d12a41d86868b90d4
 I
 chat_server/client_gui.py,5\9\593a435e8901f36fb7f23ec7d5290e5fa358df6a
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+J
+chat_server/stylesheet.css,0\7\078ac5907896fbb182057aacf9bb47ecdceeb7ef

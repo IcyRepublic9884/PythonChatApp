@@ -1,24 +1,20 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'server_form.ui'
+# Form implementation generated from reading ui file 'ui_files/server_form.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtWidgets
-
-from server import SimpleChatServer
-
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
-    def __init__(self):
-        # initial server configurations
-        self.server = SimpleChatServer(port_no=8080)
-
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(934, 426)
+        stylesheet = open("stylesheet.css", "r")
+        MainWindow.setStyleSheet(stylesheet.read())
+        stylesheet.close()
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
@@ -49,7 +45,7 @@ class Ui_MainWindow(object):
         self.groupBox_2.setGeometry(QtCore.QRect(380, 10, 541, 371))
         self.groupBox_2.setObjectName("groupBox_2")
         self.client_list_view = QtWidgets.QListView(self.groupBox_2)
-        self.client_list_view.setGeometry(QtCore.QRect(10, 20, 521, 341))
+        self.client_list_view.setGeometry(QtCore.QRect(10, 30, 521, 331))
         self.client_list_view.setObjectName("client_list_view")
         self.start_server_button = QtWidgets.QPushButton(self.centralwidget)
         self.start_server_button.setGeometry(QtCore.QRect(10, 240, 171, 61))
@@ -84,15 +80,9 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-    def start_server_action(self):
-        self.server.start_server()
-
-    def stop_server_action(self):
-        self.server.stop()
-
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("SimpleChatServer", "SimpleChatServer"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.groupBox.setTitle(_translate("MainWindow", "Configure Server Settings"))
         self.label.setText(_translate("MainWindow", "Port Number"))
         self.label_2.setText(_translate("MainWindow", "Client Wait List"))
@@ -110,10 +100,10 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+

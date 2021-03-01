@@ -1,31 +1,33 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'client_form.ui'
+# Form implementation generated from reading ui file 'ui_files/client_form.ui'
 #
 # Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtWidgets
-
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1033, 387)
+        stylesheet = open("stylesheet.css", "r")
+        MainWindow.setStyleSheet(stylesheet.read())
+        stylesheet.close()
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox.setGeometry(QtCore.QRect(10, 10, 401, 331))
         self.groupBox.setObjectName("groupBox")
         self.listView = QtWidgets.QListView(self.groupBox)
-        self.listView.setGeometry(QtCore.QRect(10, 20, 381, 301))
+        self.listView.setGeometry(QtCore.QRect(10, 30, 381, 291))
         self.listView.setObjectName("listView")
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_3.setGeometry(QtCore.QRect(550, 260, 111, 71))
+        self.pushButton_3.setGeometry(QtCore.QRect(550, 260, 101, 71))
         self.pushButton_3.setObjectName("pushButton_3")
         self.plainTextEdit = QtWidgets.QPlainTextEdit(self.centralwidget)
-        self.plainTextEdit.setGeometry(QtCore.QRect(440, 30, 211, 211))
+        self.plainTextEdit.setGeometry(QtCore.QRect(430, 40, 221, 211))
         self.plainTextEdit.setObjectName("plainTextEdit")
         self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
         self.groupBox_2.setGeometry(QtCore.QRect(670, 20, 341, 321))
@@ -34,7 +36,7 @@ class Ui_MainWindow(object):
         self.label.setGeometry(QtCore.QRect(20, 40, 111, 21))
         self.label.setObjectName("label")
         self.lineEdit = QtWidgets.QLineEdit(self.groupBox_2)
-        self.lineEdit.setGeometry(QtCore.QRect(150, 40, 181, 22))
+        self.lineEdit.setGeometry(QtCore.QRect(150, 40, 181, 31))
         self.lineEdit.setObjectName("lineEdit")
         self.label_2 = QtWidgets.QLabel(self.groupBox_2)
         self.label_2.setGeometry(QtCore.QRect(20, 90, 91, 31))
@@ -43,12 +45,12 @@ class Ui_MainWindow(object):
         self.label_3.setGeometry(QtCore.QRect(20, 160, 121, 21))
         self.label_3.setObjectName("label_3")
         self.spinBox = QtWidgets.QSpinBox(self.groupBox_2)
-        self.spinBox.setGeometry(QtCore.QRect(150, 160, 181, 22))
+        self.spinBox.setGeometry(QtCore.QRect(150, 160, 181, 31))
         self.spinBox.setMinimum(100)
         self.spinBox.setMaximum(3000)
         self.spinBox.setObjectName("spinBox")
         self.spinBox_2 = QtWidgets.QSpinBox(self.groupBox_2)
-        self.spinBox_2.setGeometry(QtCore.QRect(150, 90, 181, 22))
+        self.spinBox_2.setGeometry(QtCore.QRect(150, 90, 181, 31))
         self.spinBox_2.setMinimum(1)
         self.spinBox_2.setMaximum(8000)
         self.spinBox_2.setObjectName("spinBox_2")
@@ -116,10 +118,10 @@ class Ui_MainWindow(object):
 
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
+
