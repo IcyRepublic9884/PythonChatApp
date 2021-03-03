@@ -1,2 +1,3 @@
-# DDOS in Python
-A simple DDOS attack written in python<br>
+# ChatServer in Python
+A simple Chat server written in python<br>
+Uses PyQt5 and sockets
