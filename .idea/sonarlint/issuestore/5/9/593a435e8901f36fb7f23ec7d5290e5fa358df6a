@@ -1,14 +1,14 @@
 
-opython:S116!"RRename this field "groupBox_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(æ½Ü'8íÂëİş.
-tpython:S100u"QRename method "retranslateUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(”«Àşÿÿÿÿ8íÂëİş.
-npython:S100"KRename method "setupUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ8’ÜÔİş.
-npython:S116R"PRename this field "menuHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¦×é§8íÂëİş.
-npython:S116P"PRename this field "menuFile" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ö‰§»8íÂëİş.
-ppython:S116W"SRename this field "actionAbout" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÅáÃ8íÂëİş.
-ppython:S116Y"RRename this field "actionHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¿æŠ×8íÂëİş.
-wpython:S116U"TRename this field "actionExport" to match the regular expression ^[_a-z][_a-z0-9]*$.(îñæŒùÿÿÿÿ8íÂëİş.
-ypython:S117"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ8’ÜÔİş.
-upython:S116C"RRename this field "groupBox_3" to match the regular expression ^[_a-z][_a-z0-9]*$.(²îƒÌûÿÿÿÿ8íÂëİş.
+upython:S116D"RRename this field "groupBox_3" to match the regular expression ^[_a-z][_a-z0-9]*$.(²îƒÌûÿÿÿÿ8íÂëİş.
+ypython:S117"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ8’ÜÔİş.
+npython:S116Q"PRename this field "menuFile" to match the regular expression ^[_a-z][_a-z0-9]*$.(Ö‰§»8íÂëİş.
+npython:S116S"PRename this field "menuHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¦×é§8íÂëİş.
+ppython:S116Z"RRename this field "actionHelp" to match the regular expression ^[_a-z][_a-z0-9]*$.(¿æŠ×8íÂëİş.
+ppython:S116X"SRename this field "actionAbout" to match the regular expression ^[_a-z][_a-z0-9]*$.(ÅáÃ8íÂëİş.
+wpython:S116V"TRename this field "actionExport" to match the regular expression ^[_a-z][_a-z0-9]*$.(îñæŒùÿÿÿÿ8íÂëİş.
+opython:S116""RRename this field "groupBox_2" to match the regular expression ^[_a-z][_a-z0-9]*$.(æ½Ü'8íÂëİş.
 Špython:S101"gRename class "Ui_MainWindow" to match the regular expression ^_?([A-Z_][a-zA-Z0-9]*|[a-z_][a-z0-9_]*)$.( Ìñıùÿÿÿÿ8’ÜÔİş.
-npython:S116"PRename this field "groupBox" to match the regular expression ^[_a-z][_a-z0-9]*$.(ŸñÀ8íÂëİş.
-ypython:S117u"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(”«Àşÿÿÿÿ8íÂëİş.
+npython:S100"KRename method "setupUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÂéÇ´ÿÿÿÿÿ8’ÜÔİş.
+ypython:S117v"VRename this parameter "MainWindow" to match the regular expression ^[_a-z][a-z0-9_]*$.(”«Àşÿÿÿÿ8íÂëİş.
+npython:S116"PRename this field "groupBox" to match the regular expression ^[_a-z][_a-z0-9]*$.(ŸñÀ8íÂëİş.
+tpython:S100v"QRename method "retranslateUi" to match the regular expression ^[a-z_][a-z0-9_]*$.(”«Àşÿÿÿÿ8íÂëİş.
